@@ -34,8 +34,6 @@ This patch adds a user-exposable toggle (via MCM) to **enable or disable** dodge
   - Havok / Nemesis tools and documentation for enabling the behavior edits  
   - SkyUI / MCM infrastructure for configuration support  
 
-**License / Use:** Please respect the original mod’s license and credit Distar for the original work. This patch is provided under the same spirit of open modding and compatibility.
-
 ---
 
 ## Versioning & Changelog
