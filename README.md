@@ -28,7 +28,7 @@ This patch adds a user-exposable toggle (via MCM) to **enable or disable** dodge
 ## Credits & Attribution
 
 - **Original Author:** [Distar](https://www.distaranimation.com/mods/dodge) — for Dodge MCO|DXP, the base mod, animation framework, and architecture.  
-- **Patch / This Add-On:** (Your name or handle)  
+- **Patch / This Add-On:** ml6754  
 - **Thanks to:**  
   - The original DMCO / Dodge MCO|DXP community and authors for the foundation  
   - Havok / Nemesis tools and documentation for enabling the behavior edits  
