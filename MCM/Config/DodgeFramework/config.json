@@ -1,0 +1,46 @@
+{
+    "modName": "DodgeFramework",
+    "displayName": "Dodge Framework",
+    "minMcmVersion": 9,
+    "cursorFillMode": "topToBottom",
+    "content": [
+        {
+            "text": "$DodgeFramework_Controls_Header",
+            "type": "header"
+        },
+        {
+            "id": "bUseSprintButton:Controls",
+            "text": "$DodgeFramework_UseSprintButton_OptionText",
+            "type": "toggle",
+            "help": "$DodgeFramework_UseSprintButton_InfoText",
+            "groupControl": 1,
+            "valueOptions": {
+                "sourceType": "ModSettingBool"
+            }
+        },
+        {
+            "id": "fSprintHoldDuration:Controls",
+            "text": "$DodgeFramework_SprintHoldDuration_OptionText",
+            "type": "slider",
+            "help": "$DodgeFramework_SprintHoldDuration_InfoText",
+            "groupCondition": 1,
+            "valueOptions": {
+                "min": 0.0,
+                "max": 1.0,
+                "step": 0.01,
+                "formatString": "{2} s",
+                "sourceType": "ModSettingFloat"
+            }
+        },
+        {
+            "id": "uDodgeKey:Controls",
+            "text": "$DodgeFramework_DodgeKey_OptionText",
+            "type": "keymap",
+            "help": "$DodgeFramework_DodgeKey_InfoText",
+            "ignoreConflicts": false,
+            "valueOptions": {
+              "sourceType": "ModSettingInt"
+            }
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "modName": "Dodge_MCO-DXP",
+    "displayName": "Dodge MCO-DXP",
+    "cursorFillMode": "topToBottom",
+    "content": [
+      {
+        "text": "Dodge MCO-DXP",
+        "type": "header"
+      },
+          {
+            "id": "bdodgeMcoDxp_usePercent:Main",
+            "text": "$dodgeMcoDxp_usePercent_OptionText",
+            "type": "toggle",
+            "groupControl": 2,
+            "groupCondition": 1,
+            "valueOptions": {
+                "sourceType": "ModSettingBool"
+              }
+          },
+        {
+            "id": "idodgeMcoDxp_staminaCost:Main",
+            "text": "$dodgeMcoDxp_staminaCost_OptionText",
+            "help": "$dodgeMcoDxp_staminaCost_HelpText",
+            "type": "slider",
+            "valueOptions": {
+                "min": 0,
+                "max": 100,
+                "step": 1,
+              "sourceType": "ModSettingInt"
+            }
+        },
+        {
+          "id": "idodgeMcoDxp_magickaCost:Main",
+          "text": "$dodgeMcoDxp_magickaCost_OptionText",
+          "help": "$dodgeMcoDxp_magickaCost_HelpText",
+          "type": "slider",
+          "valueOptions": {
+              "min": 0,
+              "max": 100,
+              "step": 1,
+            "sourceType": "ModSettingInt"
+          }
+        },
+        {
+          "id": "bdodgeMcoDxp_enableDodgeAttacks:Main",
+          "text": "Enable Dodge Attacks",
+          "type": "toggle",
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        }
+    ]
+}
