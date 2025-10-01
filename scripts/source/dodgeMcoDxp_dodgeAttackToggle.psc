@@ -1,4 +1,4 @@
-Scriptname DMCO_DodgeAttackMCM extends SKI_ConfigBase  
+Scriptname dodgeMcoDxp_dodgeAttackToggle extends SKI_ConfigBase  
 
 Bool Property DMCO_EnableDodgeAttacks Auto  
 
