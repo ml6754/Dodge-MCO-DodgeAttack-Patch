@@ -40,14 +40,6 @@
               "step": 1,
             "sourceType": "ModSettingInt"
           }
-        },
-        {
-          "id": "bdodgeMcoDxp_enableDodgeAttacks:Main",
-          "text": "Enable Dodge Attacks",
-          "type": "toggle",
-          "valueOptions": {
-            "sourceType": "ModSettingBool"
-          }
         }
     ]
 }

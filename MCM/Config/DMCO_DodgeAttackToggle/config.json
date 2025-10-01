@@ -1,0 +1,20 @@
+{
+  "modName": "DMCO Dodge Patch",
+  "displayName": "DMCO Dodge Patch",
+  "pages": [
+    {
+      "id": "Main",
+      "displayName": "Main",
+      "content": [
+        {
+          "id": "bdmco_enableDodgeAttacks:Main",
+          "text": "Enable Dodge Attacks",
+          "type": "toggle",
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        }
+      ]
+    }
+  ]
+}

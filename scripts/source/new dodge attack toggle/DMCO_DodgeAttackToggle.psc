@@ -1,16 +1,25 @@
-Scriptname DMCO_DodgeAttackToggle extends Quest  
+Scriptname DMCO_DodgeAttackMCM extends SKI_ConfigBase  
 
-; === Property for Havok variable ===
+; property to store user toggle
 Bool Property DMCO_EnableDodgeAttacks Auto  
 
-Event OnInit()
-    ; Load the saved toggle from MCM settings.ini
-    Bool enabled = ModSettingGetBool("Dodge_MCO-DXP", "bdodgeMcoDxp_enableDodgeAttacks")
+Event OnConfigInit()
+    ModName = "DMCO Dodge Patch"
+EndEvent  
 
-    ; Push into behavior graph
-    Behavior.SetVariableBool("DMCO_EnableDodgeAttacks", enabled)
-EndEvent
-Event OnPlayerLoadGame()
-    Bool enabled = ModSettingGetBool("Dodge_MCO-DXP", "bdodgeMcoDxp_enableDodgeAttacks")
-    Behavior.SetVariableBool("DMCO_EnableDodgeAttacks", enabled)
-EndEvent
+Function OnPageReset(string page)
+    If (page == "Main")
+        SetCursorFillMode(TOP_TO_BOTTOM)
+
+        AddToggleOption("Enable Dodge Attacks", DMCO_EnableDodgeAttacks)
+    EndIf
+EndFunction  
+
+Event OnOptionSelect(string optionName, int optionIndex)
+    If optionName == "Enable Dodge Attacks"
+        DMCO_EnableDodgeAttacks = !DMCO_EnableDodgeAttacks
+
+        ; push the value into Havok
+        Behavior.SetVariableBool("DMCO_EnableDodgeAttacks", DMCO_EnableDodgeAttacks)
+    EndIf
+EndEvent  
