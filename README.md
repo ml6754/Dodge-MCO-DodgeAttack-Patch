@@ -18,10 +18,7 @@ This patch adds a user-exposable toggle (via MCM) to **enable or disable** dodge
 
 ## Installation
 
-1. Place your compiled changes (XML, JSON, INI, `.pex`) in the appropriate folders within your DMCO mod directory.
-2. Ensure the new `.pex` (from `DMCO_DodgeAttackToggle.psc`) is in `Data\Scripts\`.
-3. Launch Skyrim, open DMCO’s MCM menu, and you should see a new checkbox **“Enable Dodge Attacks”**.
-4. When toggled off (default), dodge attack transitions are disabled and you should not experience T-poses. When toggled on, transitions behave as normal (if animations are present).
+1. Add the new hkx dodge file to your load order as you would any other mod to overwrite the DMCO mod
 
 ---
 
