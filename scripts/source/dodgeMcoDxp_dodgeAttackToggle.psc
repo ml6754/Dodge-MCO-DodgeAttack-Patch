@@ -4,7 +4,9 @@ Bool Property DMCO_EnableDodgeAttacks Auto
 
 Event OnConfigInit()
     ModName = "DMCO Dodge Patch"
-EndEvent  
+    Game.GetPlayer().SetGraphVariableBool("DMCO_EnableDodgeAttacks", DMCO_EnableDodgeAttacks)
+EndEvent
+
 
 Function OnPageReset(string page)
     If (page == "Main")
@@ -13,9 +15,10 @@ Function OnPageReset(string page)
     EndIf
 EndFunction  
 
-Event OnOptionSelect(string optionName, int optionIndex)
-    If optionName == "Enable Dodge Attacks"
+Event OnOptionSelect(int option)
+    If option == 0
         DMCO_EnableDodgeAttacks = !DMCO_EnableDodgeAttacks
-        Behavior.SetVariableBool("DMCO_EnableDodgeAttacks", DMCO_EnableDodgeAttacks)
+        Debug.Notification("Dodge Attacks set to: " + DMCO_EnableDodgeAttacks)
     EndIf
 EndEvent  
+

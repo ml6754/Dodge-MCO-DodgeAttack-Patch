@@ -53,15 +53,12 @@
 			<!-- applySelfTransition SERIALIZE_IGNORED -->
 			<!-- initializeCharacterPose SERIALIZE_IGNORED -->
 		</hkobject>
-		<!-- variable for disabling dodge attacks-->
-		<hkobject name="#0998" class="hkbVariableInfo" signature="0xeba0f60e">
-			<hkparam name="name">DMCO_EnableDodgeAttacks</hkparam>
-			<hkparam name="type">VARIABLE_TYPE_BOOL</hkparam>
-			<hkparam name="initialValue">false</hkparam>
-		</hkobject>
-		<!-- condition for disabling dodge attacks-->
+
 		<hkobject name="#0999" class="hkbExpressionCondition" signature="0x1c3c1045">
-  			 <hkparam name="expression">DMCO_EnableDodgeAttacks == true</hkparam>
+			<!-- memSizeAndFlags SERIALIZE_IGNORED -->
+			<!-- referenceCount SERIALIZE_IGNORED -->
+			<hkparam name="expression">DMCO_EnableDodgeAttacks == true</hkparam>
+			<!-- compiledExpressionSet SERIALIZE_IGNORED -->
 		</hkobject>
 
 		<hkobject name="#0008" class="hkbStateMachineTransitionInfoArray" signature="0xe397b11e">
@@ -278,7 +275,7 @@
 				</hkobject>
 			</hkparam>
 		</hkobject>
-		
+
 		<hkobject name="#0010" class="hkbBehaviorReferenceGenerator" signature="0xfcb5423">
 			<!-- memSizeAndFlags SERIALIZE_IGNORED -->
 			<!-- referenceCount SERIALIZE_IGNORED -->
@@ -1562,7 +1559,7 @@
 			<!-- memSizeAndFlags SERIALIZE_IGNORED -->
 			<!-- referenceCount SERIALIZE_IGNORED -->
 			<hkparam name="attributeDefaults" numelements="0"></hkparam>
-			<hkparam name="variableInfos" numelements="7">
+			<hkparam name="variableInfos" numelements="8">
 				<hkobject>
 					<hkparam name="role">
 						<hkobject>
@@ -1625,6 +1622,15 @@
 						</hkobject>
 					</hkparam>
 					<hkparam name="type">VARIABLE_TYPE_INT8</hkparam>
+				</hkobject>
+				<hkobject>
+					<hkparam name="role">
+						<hkobject>
+							<hkparam name="role">ROLE_DEFAULT</hkparam>
+							<hkparam name="flags">0</hkparam>
+						</hkobject>
+					</hkparam>
+					<hkparam name="type">VARIABLE_TYPE_BOOL</hkparam>
 				</hkobject>
 			</hkparam>
 			<hkparam name="characterPropertyInfos" numelements="0"></hkparam>
