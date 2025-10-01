@@ -24,6 +24,7 @@ Event OnOptionSelect(int option)
         Debug.Notification("Dodge Attacks set to: " + DMCO_EnableDodgeAttacks)
 
         ; Push update into Havok graph
+        ; use an skse plugin instead
         Game.GetPlayer().SetGraphVariableBool("DMCO_EnableDodgeAttacks", DMCO_EnableDodgeAttacks)
     EndIf
 EndEvent  
