@@ -15,7 +15,7 @@ This patch adds a condition (currently defaulting to false) to dodge-to-attack t
 
 ## Installation
 
-1. Add the new hkx dodge file to your load order as you would any other mod to overwrite the DMCO mod
+1. download mod as you would any other one
 
 ---
 
