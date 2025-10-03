@@ -1,6 +1,7 @@
 Scriptname DodgeMCODXPpatchesMCM extends SKI_ConfigBase
 
-Bool Property bEnableDodgeAttacks = False Auto
+bool dodgeAttackToggle
+int dodgeAttackToggleOptionID
 
 Event OnConfigInit()
     ModName = "DMCO Patches"
@@ -10,25 +11,25 @@ EndEvent
 
 Event OnPageReset(String page)
     if (page == "DMCO Patches")
-        AddToggleOptionST("Enable Dodge Attacks", "dodgeAttacks", bEnableDodgeAttacks)
+        dodgeAttackToggleOptionID = AddToggleOption("Enable Dodge Attacks", dodgeAttackToggle)
     endif
 EndEvent
 
-; ==============================
-; ST HANDLER FOR dodgeAttacks
-; ==============================
-state dodgeAttacks
-    Event OnSelectST()
-        bEnableDodgeAttacks = !bEnableDodgeAttacks
-        SetToggleOptionValueST(bEnableDodgeAttacks)
-    EndEvent
+Event OnOptionSelect(Int option)
+    if option == dodgeAttackToggleOptionID
+        dodgeAttackToggle = !dodgeAttackToggle
+        SetToggleOptionValue(option, dodgeAttackToggle)
 
-    Event OnDefaultST()
-        bEnableDodgeAttacks = False
-        SetToggleOptionValueST(bEnableDodgeAttacks)
-    EndEvent
+        if dodgeAttackToggle
+            Debug.MessageBox("Dodge Attacks Enabled")
+        else
+            Debug.MessageBox("Dodge Attacks Disabled")
+        endif
+    endif
+EndEvent
 
-    Event OnHighlightST()
+Event OnOptionHighlight(Int option)
+    if option == dodgeAttackToggleOptionID
         SetInfoText("Enable or disable dodge attack functionality.")
-    EndEvent
-endState
+    endif
+EndEvent
