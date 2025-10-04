@@ -5,17 +5,13 @@ int dodgeAttackToggleOptionID
 
 Event OnConfigInit()
     ModName = "DMCO Patches"
-    Pages = new string[1]
-    Pages[0] = "DMCO Patches"
 EndEvent
 
-Event OnPageReset(String page)
-    if (page == "DMCO Patches")
-        dodgeAttackToggleOptionID = AddToggleOption("Enable Dodge Attacks", dodgeAttackToggle)
-    endif
+Event OnPageReset(string page)
+    dodgeAttackToggleOptionID = AddToggleOption("Enable Dodge Attacks", dodgeAttackToggle)
 EndEvent
 
-Event OnOptionSelect(Int option)
+Event OnOptionSelect(int option)
     if option == dodgeAttackToggleOptionID
         dodgeAttackToggle = !dodgeAttackToggle
         SetToggleOptionValue(option, dodgeAttackToggle)
@@ -28,7 +24,7 @@ Event OnOptionSelect(Int option)
     endif
 EndEvent
 
-Event OnOptionHighlight(Int option)
+Event OnOptionHighlight(int option)
     if option == dodgeAttackToggleOptionID
         SetInfoText("Enable or disable dodge attack functionality.")
     endif
