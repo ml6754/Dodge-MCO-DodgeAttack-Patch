@@ -1,6 +1,6 @@
 [   
     {
-        "projectPath": "Actors\\character\\behaviors",
+        "projectPath": "Actors\\character",
         "type": "kBool",
         "name": "AllowDodgeAttacks",
         "value": false
