@@ -1,7 +1,5 @@
 Scriptname DodgeMCODXPpatchesMCM extends SKI_ConfigBase
 
-Actor Property PlayerREF Auto
-
 bool dodgeAttackToggle
 int dodgeAttackToggleOptionID
 
@@ -10,7 +8,7 @@ Event OnConfigInit()
 EndEvent
 
 Event OnPageReset(string page)
-    bool current = PlayerREF.GetAnimationVariableBool("AllowDodgeAttacks")
+    bool current = Game.GetPlayer().GetAnimationVariableBool("AllowDodgeAttacks")
     dodgeAttackToggleOptionID = AddToggleOption("Enable Dodge Attacks", current)
     dodgeAttackToggle = current
 EndEvent
@@ -20,7 +18,7 @@ Event OnOptionSelect(int option)
         dodgeAttackToggle = !dodgeAttackToggle
         SetToggleOptionValue(option, dodgeAttackToggle)
 
-	 PlayerREF.SetAnimationVariableBool("AllowDodgeAttacks", dodgeAttackToggle)
+	 Game.GetPlayer().SetAnimationVariableBool("AllowDodgeAttacks", dodgeAttackToggle)
 
         if dodgeAttackToggle
             Debug.MessageBox("Dodge Attacks Enabled")
