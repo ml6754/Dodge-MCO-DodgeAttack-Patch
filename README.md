@@ -26,10 +26,3 @@ This patch adds a condition (currently defaulting to false) to dodge-to-attack t
 
 - **Original Author:** [Distar](https://www.distaranimation.com/mods/dodge) — for Dodge MCO|DXP, the base mod, animation framework, and architecture.  
 - **Patch / This Add-On:** ml6754  
----
-
-## Versioning & Changelog
-
-- **v1.0 (Patch Release)**  
-  - Initial release of dodge-attack toggle  
-  - Fixed T-pose when transition animations are missing  
