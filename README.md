@@ -24,9 +24,9 @@ This patch adds a condition (currently defaulting to false) to dodge-to-attack t
 
 ## Credits & Attribution
 
-- **DMCO** [Distar](https://www.distaranimation.com/mods/dodge)
-- **BDI**  [Maxsu](https://www.nexusmods.com/skyrimspecialedition/mods/78146)
-- **Patch** ml6754
+- **DMCO:** [Distar](https://www.distaranimation.com/mods/dodge)
+- **BDI:**  [Maxsu](https://www.nexusmods.com/skyrimspecialedition/mods/78146)
+- **Patch:** ME
 
 ## Future Updates
 - More options like step dodge only/roll dodge only with FOMOD installation
