@@ -24,7 +24,8 @@ This patch adds a condition (currently defaulting to false) to dodge-to-attack t
 
 ## Credits & Attribution
 
-- **Original Author:** [Distar](https://www.distaranimation.com/mods/dodge) — for Dodge MCO|DXP, the base mod, animation framework, and architecture.  
+- **DMCO** [Distar](https://www.distaranimation.com/mods/dodge)
+- **BDI**  [Maxsu](https://www.nexusmods.com/skyrimspecialedition/mods/78146)
 - **Patch** ml6754
 
 ## Future Updates
