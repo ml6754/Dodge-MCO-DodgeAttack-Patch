@@ -25,4 +25,7 @@ This patch adds a condition (currently defaulting to false) to dodge-to-attack t
 ## Credits & Attribution
 
 - **Original Author:** [Distar](https://www.distaranimation.com/mods/dodge) — for Dodge MCO|DXP, the base mod, animation framework, and architecture.  
-- **Patch / This Add-On:** ml6754  
+- **Patch** ml6754
+
+## Future Updates
+- More options like step dodge only/roll dodge only with FOMOD installation
