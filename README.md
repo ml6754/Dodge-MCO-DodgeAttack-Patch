@@ -23,4 +23,4 @@ Gates Dodge attacks behind a boolean (currently defaulting to false), toggleable
 - **Patch:** ME
 
 ## Future Updates
-- More options like step dodge only/roll dodge only with FOMOD installation
+- More options like step dodge only/roll dodge only
