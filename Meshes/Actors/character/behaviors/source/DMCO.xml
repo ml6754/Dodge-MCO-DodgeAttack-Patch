@@ -53,7 +53,7 @@
 			<!-- applySelfTransition SERIALIZE_IGNORED -->
 			<!-- initializeCharacterPose SERIALIZE_IGNORED -->
 		</hkobject>
-
+		
 		<hkobject name="#0999" class="hkbExpressionCondition" signature="0x1c3c1045">
 			<!-- memSizeAndFlags SERIALIZE_IGNORED -->
 			<!-- referenceCount SERIALIZE_IGNORED -->
@@ -1512,7 +1512,7 @@
 		<hkobject name="#0050" class="hkbBehaviorGraphStringData" signature="0xc713064e">
 			<!-- memSizeAndFlags SERIALIZE_IGNORED -->
 			<!-- referenceCount SERIALIZE_IGNORED -->
-			<hkparam name="eventNames" numelements="28">
+			<hkparam name="eventNames" numelements="27">
 				<hkcstring>PIE</hkcstring>
 				<hkcstring>MCO_Recovery</hkcstring>
 				<hkcstring>MCO_InputBuffer</hkcstring>
@@ -1543,7 +1543,8 @@
 				<hkcstring>MCO_TransitionToAttackClose</hkcstring>
 			</hkparam>
 			<hkparam name="attributeNames" numelements="0"></hkparam>
-			<hkparam name="variableNames" numelements="7">
+			<hkparam name="variableNames" numelements="8">
+				<hkcstring>AllowDodgeAttacks</hkcstring>
 				<hkcstring>MCO_AttackSpeed</hkcstring>
 				<hkcstring>MCO_IsInRecovery</hkcstring>
 				<hkcstring>bAnimationDriven</hkcstring>
