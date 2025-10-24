@@ -57,7 +57,7 @@
 		<hkobject name="#0999" class="hkbExpressionCondition" signature="0x1c3c1045">
 			<!-- memSizeAndFlags SERIALIZE_IGNORED -->
 			<!-- referenceCount SERIALIZE_IGNORED -->
-			<hkparam name="expression">AllowDodgeAttacks == true</hkparam>
+			<hkparam name="expression">AllowDodgeAttacks</hkparam>
 			<!-- compiledExpressionSet SERIALIZE_IGNORED -->
 		</hkobject>
 
