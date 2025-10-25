@@ -21,6 +21,3 @@ Gates Dodge attacks behind a boolean (currently defaulting to false), toggleable
 - **DMCO:** [Distar](https://www.distaranimation.com/mods/dodge)
 - **BDI:**  [Maxsu](https://www.nexusmods.com/skyrimspecialedition/mods/78146)
 - **Patch:** ME
-
-## Future Updates
-- More options like step dodge only/roll dodge only
