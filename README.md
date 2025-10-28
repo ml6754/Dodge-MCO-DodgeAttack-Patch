@@ -1,4 +1,4 @@
-# DMCO Dodge-Attack Toggle Patch
+# DMCO Dodge patches
 
 ## Description  
 This patch adds a condition to dodge-to-attack transitions in the DMCO / Dodge MCO|DXP mod, preventing T-pose errors when dodge-attack animations are missing.
