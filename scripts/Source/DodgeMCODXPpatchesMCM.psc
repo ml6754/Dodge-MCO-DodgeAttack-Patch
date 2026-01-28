@@ -2,7 +2,6 @@ Scriptname DodgeMCODXPpatchesMCM extends SKI_ConfigBase
 
 DodgeMCODXP_ControllerAlias Property Controller Auto
 
-; local cached values
 bool sword
 bool warAxe
 bool mace
@@ -17,7 +16,7 @@ bool bow
 bool crossbow
 bool unarmed
 
-; option IDs
+; MCM option IDs
 int optSword
 int optWarAxe
 int optMace
@@ -42,7 +41,7 @@ Event OnPageReset(string page)
         return
     endif
 
-    ; cache current values
+    ; set values to controller value
     sword     = Controller.Allow_Sword
     warAxe    = Controller.Allow_WarAxe
     mace      = Controller.Allow_Mace
@@ -137,5 +136,5 @@ Event OnOptionSelect(int option)
 EndEvent
 
 Event OnOptionHighlight(int option)
-    SetInfoText("Toggle dodge attacks per weapon type (right-hand weapon only).")
+    SetInfoText("Toggle dodge attacks per weapon type.")
 EndEvent
