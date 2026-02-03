@@ -1,7 +1,7 @@
 # DMCO Dodge-Attack Toggle Patch
 
 ## Description  
-This patch conditionally guards dodge-to-attack transitions in the DMCO / Dodge MCO|DXP mod and provides a per weapon configuration so that you are able to turn dodge attacks on and off per weapon, preventing T-pose errors when dodge-attack animations are missing, as well as providing an optional step dodge only feature.
+This patch conditionally guards dodge-to-attack transitions in the DMCO / Dodge MCO|DXP mod and provides a per weapon configuration to toggle dodge attacks on and off, preventing T-pose errors when dodge-attack animations are missing.
 
 ---
 
